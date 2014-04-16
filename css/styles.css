@@ -1,0 +1,47 @@
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    line-height: 0;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+header h1 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#bios {
+    margin-bottom: 30px;
+}
+
+#bios h1 {
+    text-align: center;
+}
+
+#bios .person{
+    margin-bottom: 30px;
+}
+
+#bios img {
+    float: left;
+    margin-right: 20px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="description" content="This is copyright dev workshop and is an angular workshop">
+    <meta name="author" content="Dev Workshop">
+    <link rel="stylesheet" href="css/foundation.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/60993/logo.png" alt="this is the dwi logo"/>
+            <h1>AngularJS | Controllers</h1>
+        </header>
+
+        <!--this is to show what the IntrolController can do-->
+        <!--<div ng-controller="IntroController">-->
+            <!--<p>{{content.firstParagraph}}</p>-->
+            <!--<p>{{content.secondParagraph}}</p>-->
+            <!--<p class="{{data.style}}">{{data.example}}</p>-->
+        <!--</div>-->
+
+        <!--this is to show the two controllers do now share data-->
+        <!--<div ng-controller="IntroController">-->
+            <!--<p>{{content.firstParagraph}}</p>-->
+            <!--<p>{{content.secondParagraph}}</p>-->
+            <!--<p class="{{data.style}}">{{data.example}}</p>-->
+        <!--</div>-->
+
+        <!--<div ng-controller="IntroSecondController">-->
+            <!--<p>{{content.firstParagraph}}</p>-->
+            <!--<p>{{content.secondParagraph}}</p>-->
+            <!--<p class="{{data.style}}">{{data.example}}</p>-->
+        <!--</div>-->
+
+        <!--this is for when are going to share data between controllers in our Ctrl.js-->
+        <div ng-app="sharedCtrlApp">
+            <div ng-controller="IntroController">
+                <p>{{content.firstParagraph}}</p>
+                <p>{{content.secondParagraph}}</p>
+            </div>
+
+            <div ng-controller="IntroSecondController">
+                <p>{{content.firstParagraph}}</p>
+                <p>{{content.secondParagraph}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="lib/angular.min.js"></script>
+    <script src="js/Ctrl.js"></script>
+</body>
+</html>
